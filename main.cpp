@@ -97,7 +97,8 @@ int main()
     bool end_loop=false;
         do{
             int user_choice;
-            cout<<"Choose an option:\n1 - Assignment 1\n2 - Assignment 2\n3 - Assignment 3\n4 - Homework 1\n5 - Homework 2\nEverything else - Exit"<<std::endl;
+            cout<<"Choose an option:\n1 - Assignment 1\n2 - Assignment 2\n3 - Assignment 3\n4 - Homework 1\n"
+                  "5 - Homework 2\nEverything else - Exit"<<endl;
             cin>>user_choice;
             switch(user_choice){
                 case 1:{
@@ -145,7 +146,8 @@ int main()
                 }
                 case 5:{
                     int userChoice;
-                    cout<<"Choose an option:\n1-one hundred elements\n2-one thousand elements\n3-ten thousand elements\n4-one hundred thousand elements\nEverything else - Exit"<<endl;;
+                    cout<<"Choose an option:\n1-one hundred elements\n2-one thousand elements\n"
+                          "3-ten thousand elements\n4-one hundred thousand elements\nEverything else - Exit"<<endl;
                     cin>>userChoice;
                     switch(userChoice){
                         case 1:{
@@ -177,7 +179,7 @@ int main()
                             break;
                         }
                         case 3:{
-                        srand(time(nullptr));
+                            srand(time(nullptr));
                             vector<int>vTenThousand;
                             for(int i=0; i<10000; i++){
                                 vTenThousand.emplace_back(rand()%100+0);
